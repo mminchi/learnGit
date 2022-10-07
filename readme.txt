@@ -6,3 +6,12 @@ man git-<verb>
 
 
 git init
+
+
+git add readme.txt
+
+git commit -m "wrote a readme file"
+
+git status
+
+git diff readme.txt
