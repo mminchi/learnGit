@@ -12,6 +12,9 @@ git add readme.txt
 
 git commit -m "wrote a readme file"
 
+#跳过暂存区直接提交
+git commit -a 
+
 git status
 
 当前文件和暂存区域快照之间的差异， 也就是修改之后还没有暂存起来的变化内容
@@ -41,4 +44,25 @@ git reflog
 git checkout -- readme.txt
 git restore readme.txt
 
+只能做到在工作区删除
+rm temp.md
+
+工作区和仓库同时删除，但需要commit进行提交
+git rm temp.md
+
+把文件从 Git 仓库中删除（亦即从暂存区域移除），但仍然希望保留在当前工作目录中
+这些文件可忽略，或者是存在于.gitignore中
+git rm --cached README
+
+移动文件
+git mv LICENSE LICENSE.txt
+等价于下面三条命令
+mv LICENSE LICENSE.txt
+git rm LICENSE
+git add LICENSE.txt
+
+git restore --staged  LICENSE
+会发现LICENSE被删除，有个新文件LICENSE.txt
+git restore LICENSE
+会发现LICENSE已经还原，此时也有个新文件LICENSE.txt
 
