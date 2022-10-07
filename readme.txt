@@ -61,8 +61,9 @@ mv LICENSE LICENSE.txt
 git rm LICENSE
 git add LICENSE.txt
 
+暂存区的修改撤销掉（unstage），重新放回工作区 即从已暂存返回已修改状态
 git restore --staged  LICENSE
 会发现LICENSE被删除，有个新文件LICENSE.txt
-git restore LICENSE
+git restore LICENSE           丢弃工作区的修改
 会发现LICENSE已经还原，此时也有个新文件LICENSE.txt
 
