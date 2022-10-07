@@ -39,6 +39,6 @@ git reflog
 
 丢弃工作区的修改(回到与版本库或者暂存区一致的版本)  注意是两个-
 git checkout -- readme.txt
+git restore readme.txt
 
 
-11112
