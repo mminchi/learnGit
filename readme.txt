@@ -67,3 +67,10 @@ git restore --staged  LICENSE
 git restore LICENSE           丢弃工作区的修改
 会发现LICENSE已经还原，此时也有个新文件LICENSE.txt
 
+添加远程
+git remote add origin git@github.com:mminchi/learnGit.git
+推送
+git push -u origin master
+
+从现在起，只要本地作了提交，就可以通过命令：
+git push origin master
