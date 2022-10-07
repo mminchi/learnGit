@@ -14,9 +14,13 @@ git commit -m "wrote a readme file"
 
 git status
 
+当前文件和暂存区域快照之间的差异， 也就是修改之后还没有暂存起来的变化内容
 git diff readme.txt
 
-查看工作区和版本库里面最新版本的区别
+已暂存的将要添加到下次提交里的内容
+git diff --staged
+
+查看工作区和版本库里面最新版本的区别，比对已暂存文件与最后一次提交的文件差异
 git diff HEAD -- readme.txt
 
 命令显示从最近到最远的提交日志
@@ -35,3 +39,6 @@ git reflog
 
 丢弃工作区的修改(回到与版本库或者暂存区一致的版本)  注意是两个-
 git checkout -- readme.txt
+
+
+11112
