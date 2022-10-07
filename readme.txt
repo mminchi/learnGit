@@ -74,3 +74,9 @@ git push -u origin master
 
 从现在起，只要本地作了提交，就可以通过命令：
 git push origin master
+
+查看远程库信息
+git remote -v
+
+删除远程库
+git remote rm origin
