@@ -8,3 +8,10 @@ git remote -v
 推送分支
 git push origin master
 git push origin dev
+
+git remote add origin git@github.com:mminchi/learnGit.git
+git remote set-url origin  https://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@github.com/mminchi/learnGit.git
+
+
+创建远程origin的dev分支到本地
+git switch -c dev origin/dev
