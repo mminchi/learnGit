@@ -20,3 +20,29 @@ git switch -c dev origin/dev
 git branch --set-upstream-to=origin/dev dev
 
 git pull
+
+在当前分支打标签
+git tag v1.0
+查看所有标签
+git tag
+针对某个commit id 打标签
+git tag v0.9 f52c633
+
+查看标签信息
+git show v0.9
+
+创建带有说明的标签，用-a指定标签名，-m指定说明文字
+git tag -a v0.1 -m "version 0.1 released" 1094adb
+
+删除标签
+git tag -d v0.1
+
+推送某个标签到远程
+git push origin v1.0
+
+一次性推送全部尚未推送到远程的本地标签
+git push origin --tags
+
+删除远程标签，需要从本地先删除
+git tag -d v0.9
+git push origin :refs/tags/v0.9
