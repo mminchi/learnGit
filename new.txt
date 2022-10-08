@@ -1,0 +1,10 @@
+丢弃没用合并的分支
+git branch -D <name>
+
+查看远程库的信息
+git remote 
+git remote -v
+
+推送分支
+git push origin master
+git push origin dev
