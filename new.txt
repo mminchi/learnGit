@@ -14,6 +14,7 @@ git remote set-url origin  https://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@gith
 
 
 创建远程origin的dev分支到本地
+git checkout -b dev origin/dev
 git switch -c dev origin/dev
 
 设置dev和origin/dev的链接
